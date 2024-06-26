@@ -53,13 +53,13 @@ X_scaled = scaler.fit_transform(X)
 
 ### Algorithms Used
 
-1. **Gradient Boosting Regressor (GBR)**: A powerful ensemble learning technique that builds models sequentially and reduces the bias of the combined model.
+1. **XGBoost Regressor**: A powerful ensemble learning technique that builds models sequentially and reduces the bias of the combined model.
 
 ```python
-from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.ensemble import XGBRegressor
 
-model = GradientBoostingRegressor()
-model.fit(X_train, y_train)
+xgb_model = XGBRegressor()
+xgb_model.fit(X_train, y_train)
 ```
 
 ### Model Training
@@ -68,7 +68,7 @@ The dataset was split into training and testing sets with an 80-20 split. The mo
 
 ### Model Evaluation
 
-The model was evaluated using metrics such as Mean Absolute Error (MAE) and R-squared (R²). These metrics provide insight into the model's accuracy and the proportion of variance explained by the model.
+The model was evaluated using metrics such as Mean Absolute Error (MAE) and R-squared (R²). These metrics provide insight into the model's accuracy and the proportion of variance the model explains.
 
 ```python
 from sklearn.metrics import mean_absolute_error, r2_score
