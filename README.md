@@ -9,7 +9,7 @@ This project aims to develop an advanced regression model to predict the heating
 ### Description
 
 The dataset used for this project is the Energy Efficiency Dataset, available from the UCI Machine Learning Repository. This dataset consists of 768 samples and 8 features that describe the physical attributes of buildings. The target variables are Heating Load (HL) and Cooling Load (CL).
-Tsanas,Athanasios and Xifara,Angeliki. (2012). Energy Efficiency. UCI Machine Learning Repository. https://doi.org/10.24432/C51307.
+
 
 ### Features
 
@@ -31,8 +31,7 @@ Tsanas,Athanasios and Xifara,Angeliki. (2012). Energy Efficiency. UCI Machine Le
 
 The dataset is cited as follows:
 
-> T. T. A. M. Hajdukiewicz, J. A. P. Balvedi, and E. Ghisi, "UCI Machine Learning Repository: Energy Efficiency Data Set," 2017. Available: https://archive.ics.uci.edu/ml/datasets/Energy+efficiency
-
+> Tsanas,Athanasios and Xifara,Angeliki. (2012). Energy Efficiency. UCI Machine Learning Repository. https://doi.org/10.24432/C51307.
 ## Data Preprocessing
 
 ### Data Cleaning
@@ -127,7 +126,7 @@ shap.dependence_plot('X1', shap_values, X_test)
 
 ## Conclusion
 
-The advanced regression model developed in this project effectively predicts the heating and cooling load requirements of buildings based on their physical attributes. The use of Gradient Boosting Regressor and SHAP analysis provided accurate predictions and valuable insights into feature importance and model interpretability.
+The advanced regression model developed in this project effectively predicts buildings' heating and cooling load requirements based on their physical attributes. Gradient Boosting Regressor and SHAP analysis provided accurate predictions and valuable insights into feature importance and model interpretability.
 
 ### Future Work
 
